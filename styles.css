@@ -1167,5 +1167,87 @@ footer::before {
   }
 }
 
+/* Advocacy Page Styles */
+.advocacy-page {
+  padding: 100px 20px 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advocacy-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 40px;
+  background: #ffffff;
+  border: 2px solid #FF5722;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(255, 87, 34, 0.1);
+}
+
+.advocacy-content h1 {
+  color: #000000;
+  font-size: 3em;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.advocacy-content h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #FF5722 0%, #FF9800 100%);
+  border-radius: 2px;
+}
+
+.advocacy-content p {
+  color: #333333;
+  font-size: 1.25em;
+  line-height: 1.9;
+  text-align: justify;
+}
+
+/* Responsive Design for Advocacy */
+@media (max-width: 768px) {
+  .advocacy-content {
+    padding: 40px 30px;
+  }
+  
+  .advocacy-content h1 {
+    font-size: 2.2em;
+  }
+  
+  .advocacy-content p {
+    font-size: 1.1em;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .advocacy-content {
+    padding: 30px 20px;
+  }
+  
+  .advocacy-content h1 {
+    font-size: 1.8em;
+  }
+  
+  .advocacy-content p {
+    font-size: 1em;
+  }
+}
+
+
+
+
 
 
