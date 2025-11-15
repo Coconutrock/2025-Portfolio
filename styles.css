@@ -205,13 +205,18 @@ nav ul li a:hover::after {
 .item .content {
   position: absolute;
   top: 50%;
-  left: 100px;
+  left: 30px;
   width: 300px;
   text-align: left;
   color: #eee;
   transform: translate(0, -50%);
   font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   display: none;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .slide .item:nth-child(2) .content {
@@ -235,6 +240,28 @@ nav ul li a:hover::after {
   animation: animate 1s ease-in-out 0.3s 1 forwards;
   color: #ffffff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 28px;
+  background: #FF5722;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 0;
+  animation: animate 1s ease-in-out 0.6s 1 forwards;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 10px rgba(255, 87, 34, 0.3);
+}
+
+.carousel-btn:hover {
+  background: #E64A19;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 87, 34, 0.5);
 }
 
 @keyframes animate {
